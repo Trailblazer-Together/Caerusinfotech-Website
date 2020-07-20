@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+#preLoading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #eee url(https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif)
+    no-repeat center;
+  z-index: 99999;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  /* background: #eee; */
+}
+/* ################################################################ */
+/* NavBar style */
+
+.navbar {
+  padding: 0.6rem;
+  /* margin: 0 2.5rem 0 2.5rem; */
+  letter-spacing: 1px;
+  /* box-shadow: 0px 6px 17px -9px rgba(0, 0, 0, 0.43); */
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 0.9rem;
+}
+/* .ml-auto {
+  margin-left: 6.5rem !important;
+} */
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.icon-bar {
+  width: 33px;
+  height: 5px;
+  background-color: #000;
+  display: block;
+  border-radius: 100px;
+  transition: all 0.3s;
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+
+  background: transparent !important;
+}
+.navbar-toggler .top {
+  transform: rotate(45deg);
+  transform-origin: 12% 12%;
+}
+
+.navbar-toggler .middle {
+  opacity: 0;
+}
+
+.navbar-toggler .lower {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .lower {
+  transform: rotate(0);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* ############################################################## */
+
+/* welcome Section */
+
+.back {
+  background: rgba(179, 220, 237, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(84, 195, 232, 1) 37%,
+    rgba(44, 185, 229, 1) 53%,
+    rgba(41, 184, 229, 1) 54%,
+    rgba(188, 224, 238, 1) 91%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(179, 220, 237, 1)),
+    color-stop(37%, rgba(84, 195, 232, 1)),
+    color-stop(53%, rgba(44, 185, 229, 1)),
+    color-stop(54%, rgba(41, 184, 229, 1)),
+    color-stop(91%, rgba(188, 224, 238, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(84, 195, 232, 1) 37%,
+    rgba(44, 185, 229, 1) 53%,
+    rgba(41, 184, 229, 1) 54%,
+    rgba(188, 224, 238, 1) 91%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(84, 195, 232, 1) 37%,
+    rgba(44, 185, 229, 1) 53%,
+    rgba(41, 184, 229, 1) 54%,
+    rgba(188, 224, 238, 1) 91%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(84, 195, 232, 1) 37%,
+    rgba(44, 185, 229, 1) 53%,
+    rgba(41, 184, 229, 1) 54%,
+    rgba(188, 224, 238, 1) 91%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(84, 195, 232, 1) 37%,
+    rgba(44, 185, 229, 1) 53%,
+    rgba(41, 184, 229, 1) 54%,
+    rgba(188, 224, 238, 1) 91%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -100px;
+  z-index: -1;
+  /* z-index: 1; */
+}
+/* 
+.hero {
+  background: #0a7a99;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-top: -1px;
+  margin-bottom: 200px;
+  padding-top: 80px;
+}
+
+.hero:after {
+  background: inherit;
+  bottom: -140px;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(4deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.hero h1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+} 
+*/
+/* Fix/hack for 1080p+ displays */
+@media screen and (min-width: 1921px) {
+  .hero {
+    padding-bottom: 5px;
+    margin-bottom: 240px !important;
+  }
+
+  .hero:after {
+    bottom: -220px !important;
+  }
+}
+
+.hero1 {
+  background: rgba(218, 217, 217, 0.933);
+  color: black;
+  position: relative;
+  z-index: 1;
+  margin-top: -1px;
+  margin-bottom: 200px;
+  padding-top: 80px;
+}
+
+.hero1:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  border-radius: 0px 0px 60px 60px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(4deg);
+  transform-origin: 100%;
+  z-index: -2;
+  box-shadow: 0px 20px 17px -9px rgba(0, 0, 0, 0.43);
+}
+
+.hero1 h1 {
+  padding-top: 150px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: calc(22px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.hero1 div {
+  padding-bottom: 10px;
+}
+
+/* Fix/hack for 1080p+ displays */
+@media screen and (min-width: 1921px) {
+  .hero1 {
+    padding-bottom: 5px;
+    margin-bottom: 240px !important;
+  }
+
+  .hero1:after {
+    bottom: -220px !important;
+  }
+}
+/* ################################################################# */
+
+/* box style */
+.box {
+  max-width: 720px;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+  border-radius: 26px;
+  padding: 30px;
+  z-index: 2;
+  border-radius: 60px 0px 60px 0px;
+  background: #fff;
+  box-shadow: 5px 5px 15px #9facb2, -5px -5px 15px #ffffff;
+}
+
+/* ####################################################################### */
+
+/* testimonial  */
+.testimonial {
+  text-align: center;
+  background-color: #eee;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-family: "Ubuntu";
+}
+
+.carousel-item {
+  padding: 10% 15%;
+}
+/* ######################################################################## */
+
+/* column */
+
+/* card section */
+.card_section {
+  padding: 4.5rem;
+}
+.card {
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 18px 18px 36px #dbdbdb, -18px -18px 36px #ffffff;
+}
+section {
+  margin: auto;
+}
+/* ######################################################################### */
+
+/* img section */
+.img_section {
+  padding: 2.5rem;
+  margin: 1rem;
+}
+
+/* footer */
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  /* height: 60px; */
+  line-height: 1.5;
+  text-align: center;
+  padding: 2% 8% 1% 8%;
+  box-shadow: 0px -1.7px 5px -1px rgba(0, 0, 0, 0.28);
+}
+.social-icon {
+  margin: 3px;
+}
+.footerColumn {
+  max-width: 45%;
+  margin: auto;
+}
+footer hr {
+  border: 0.5px solid #cacaca !important;
+}
+
+.icon {
+  color: #000;
+  font-size: 1.35rem;
+  margin-bottom: 5%;
+}
+
+.icon:hover {
+  color: #be79df;
+}
+
+/* ########################################################################## */
